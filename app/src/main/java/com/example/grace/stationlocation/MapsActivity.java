@@ -24,8 +24,11 @@ public class MapsActivity extends AppCompatActivity implements OnMapReadyCallbac
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_maps);
         // Obtain the SupportMapFragment and get notified when the map is ready to be used.
+
+
         SupportMapFragment mapFragment = (SupportMapFragment) getSupportFragmentManager()
                 .findFragmentById(R.id.map);
+
 
         mapFragment.getMapAsync(this);
         MarkerOptions location1 = new MarkerOptions().position(new LatLng(38.80, -76.9390)).title("Tambre Hu");
